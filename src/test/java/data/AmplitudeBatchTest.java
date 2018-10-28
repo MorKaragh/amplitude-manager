@@ -4,10 +4,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.junit.jupiter.api.Test;
 
-class AmplitudeBatchTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+public class AmplitudeBatchTest {
 
     @Test
-    public void testToString(){
+    public void test() {
         AmplitudeBatch batch = new AmplitudeBatch("testapikey");
 
         AmplitudeEvent stepanov = new AmplitudeEvent()
@@ -42,6 +44,4 @@ class AmplitudeBatchTest {
         System.out.println(gson.toJson(batch));
 
     }
-
-
 }

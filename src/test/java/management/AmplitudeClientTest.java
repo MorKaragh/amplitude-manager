@@ -5,16 +5,17 @@ import data.AmplitudeEvent;
 import data.AmplitudeException;
 import data.AmplitudePlatform;
 import http.AmplitudeResponse;
+import logging.DefaultLogger;
 import org.junit.jupiter.api.Test;
 
-class AmplitudeClientTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+public class AmplitudeClientTest {
 
     @Test
     public void sendTestEvent() throws AmplitudeException {
-        AmplitudeClient amplitude = new AmplitudeClient("*****");
-        AmplitudeResponse response = amplitude.sendBatch(createBatch());
-        System.out.println(response.getStatus());
-        System.out.println(response.getBody());
+        AmplitudeClient amplitude = new AmplitudeClient("*****", 0, new DefaultLogger());
+        amplitude.send();
     }
 
 
@@ -50,6 +51,4 @@ class AmplitudeClientTest {
         batch.addEvent(chervotkina);
         return batch;
     }
-
-
 }

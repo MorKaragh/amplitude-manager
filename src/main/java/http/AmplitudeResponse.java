@@ -19,4 +19,12 @@ public class AmplitudeResponse {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "AmplitudeResponse{" +
+                "body='" + body + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }
