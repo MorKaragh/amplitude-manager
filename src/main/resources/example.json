@@ -1,0 +1,43 @@
+{
+  "api_key":"testapikey",
+  "events":[
+    {
+      "user_id":"StepanovSA",
+      "event_type":"test event",
+      "time":1540408739,
+      "app_version":"1.0.0",
+      "country":"Russia",
+      "region":"Moscow",
+      "city":"Moscow",
+      "ip":"127.0.0.1",
+      "insert_id":"insertId",
+      "platform":"Web",
+      "user_properties":{
+
+      },
+      "event_properties":{
+        "secondEventProperty":1.5,
+        "firstEventProperty":"first"
+      }
+    },
+    {
+      "user_id":"ChervotkinaA",
+      "event_type":"test event",
+      "time":1540408739,
+      "app_version":"1.0.0",
+      "country":"Russia",
+      "region":"Moscow",
+      "city":"Moscow",
+      "ip":"127.0.0.1",
+      "insert_id":"insertId",
+      "platform":"Web",
+      "user_properties":{
+
+      },
+      "event_properties":{
+        "fourthEventProperty":200,
+        "thirdEventProperty":"first"
+      }
+    }
+  ]
+}
